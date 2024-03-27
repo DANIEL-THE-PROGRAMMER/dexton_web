@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --tgrey1: 99, 112, 125;
+  --lblue1: 232, 239, 251;
+  --lblue2: 239, 244, 252;
+  --lblue3: 243, 249, 254;
+  --lblue4: 232, 239, 251;
+  --lblue5: 250, 252, 254;
+  --dblue1: 0, 56, 255;
+  --dblue2: 0, 102, 255;
+  --dgreen2: 39, 174, 96;
+  --dgreen1: 22, 150, 76;
+  --dred2: 235, 87, 87;
+  --dred1: 219, 63, 63;
+  --tblack: 20, 26, 33;
+}
+
+
+
+body {
+  background:#F6FAFF;
+}
+
+
+li{
+  text-decoration: none;
+}
