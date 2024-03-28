@@ -31,3 +31,28 @@ body {
 li{
   text-decoration: none;
 }
+
+.gradient1{
+  background: linear-gradient(180deg, #E1EAF6 0%, rgba(225, 234, 246, 0.00) 63.64%);
+  height: 440px;
+}
+
+.blur1{
+  width: 626.223px;
+  height: 626.223px;
+  transform: rotate(-46.707deg);
+  border-radius: 626.223px;
+  background: #FA00FF;
+  opacity: 0.08;
+  filter: blur(100px);
+}
+
+.blur2{
+  width: 626.223px;
+  height: 626.223px;
+  transform: rotate(-46.707deg);
+  border-radius: 626.223px;
+  background: #1E42FF;
+  opacity: 0.08;
+  filter: blur(100px);
+}

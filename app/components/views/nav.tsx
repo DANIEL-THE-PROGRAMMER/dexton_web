@@ -17,8 +17,8 @@ export const Nav = () => {
             height={40}
           />
           <nav className="flex items-center gap-[40px] font-inter text-sm text-tblack font-medium">
-            <Link href="#">Swap</Link>
-            <Link href="#">Liquidity</Link>
+            <Link href="/swap_liquidity/swap">Swap</Link>
+            <Link href="/swap_liquidity/liquidity/liquidify">Liquidity</Link>
             <Link href="#" className="flex items-center gap-[12px]">
               <span>Wallet</span>
               <span>

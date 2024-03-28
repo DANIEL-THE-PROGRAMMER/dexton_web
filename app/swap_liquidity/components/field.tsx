@@ -8,12 +8,14 @@ export const Field = ({
   num,
   abb,
   setNum,
+  liq,
 }: {
   max?: boolean;
   image: string;
   num: any;
   abb: string;
-  setNum: Dispatch<SetStateAction<number>>;
+  setNum: Dispatch<SetStateAction<number | string>>;
+  liq?: boolean;
 }) => {
   return (
     <div>
@@ -22,10 +24,18 @@ export const Field = ({
           <span className="text-tblack">For:</span>
           <span className="text-tgrey1">TON</span>
         </div>
-        <div className="flex flex-col items-end">
-          <span className="text-tgrey1 text-[12px]">Balance:</span>
-          <span className="text-tblack">560.05069 TGR</span>
-        </div>
+        {liq && (
+          <div className="flex items-center gap-[12px]">
+            <span className="text-tgrey1 text-[12px]">Balance:</span>
+            <span className="text-tblack">560.05069 TGR</span>
+          </div>
+        )}
+        {!liq && (
+          <div className="flex flex-col items-end">
+            <span className="text-tgrey1 text-[12px]">Balance:</span>
+            <span className="text-tblack">560.05069 TGR</span>
+          </div>
+        )}
       </div>
       <div className="min-h-[50px] mt-[8px] rounded-[10px] border-[1px] border-lblue1 bg-[#FCFDFE] flex justify-between items-center p-[8px]">
         <div className="flex items-center gap-[16px]">
@@ -39,6 +49,7 @@ export const Field = ({
           <input
             className="text-lg text-tgrey1 font-medium uppercase leading-[16px] border-none outline-none bg-transparent flex grow-[1]"
             type="text"
+            placeholder="0"
             value={num}
             onChange={(e: any) => setNum(e.target.value)}
           />
