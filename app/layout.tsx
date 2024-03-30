@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Nav } from "./components/views/nav";
 import { BgGradient, Blurrybg } from "./components/bggradient";
+import { Footer } from "./components/views/footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,10 +29,10 @@ export default function RootLayout({
         <div className="flex relative">
           <BgGradient />
           <div className="w-[280px] relative z-20 border-r-lblue2 border-r-[1px]"></div>
-          <div className="grow-[1] relative z-30 basis-[400px]">{children}
-          </div>
+          <div className="grow-[1] relative z-30 basis-[400px]">{children}</div>
           <div className="w-[280px] relative z-20  border-l-lblue2 border-l-[1px]"></div>
         </div>
+        <Footer />
       </body>
     </html>
   );
