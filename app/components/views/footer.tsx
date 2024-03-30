@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Footer = () => {
   return (
-    <div className="flex flex-col items-center pt-[169px] pb-[80px] gap-[32px]">
+    <div className="flex flex-col items-center pb-[80px] gap-[32px]">
       <span className="font-semibold text-[16px] leading-[100%] text-tblack">
         DEX by Tegro
       </span>

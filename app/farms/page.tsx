@@ -5,7 +5,7 @@ import { Faqs } from "../components/views/sections/faqs";
 
 export default function Farms() {
   return (
-    <div className="mx-[32px]">
+    <div className="mx-[32px] pb-[165px]">
       <div className="mt-[48px] flex items-center justify-between font-inter ">
         <div className="flex flex-col">
           <h3 className="text-tblack font-extrabold text-[50px] leading-[100%]">

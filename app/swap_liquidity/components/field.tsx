@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import { OptionVertical } from "@/app/components/icons";
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
+import { TokenModal } from "@/app/components/tokenmodal";
 
 export const Field = ({
   max,
@@ -17,8 +20,11 @@ export const Field = ({
   setNum: Dispatch<SetStateAction<number | string>>;
   liq?: boolean;
 }) => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div>
+      <TokenModal open={open} setOpen={setOpen} />
       <div className="flex justify-between">
         <div className="flex items-end text-sm font-medium leading-[100%]">
           <span className="text-tblack">For:</span>
@@ -39,12 +45,17 @@ export const Field = ({
       </div>
       <div className="min-h-[50px] mt-[8px] rounded-[10px] border-[1px] border-lblue1 bg-[#FCFDFE] flex justify-between items-center p-[8px]">
         <div className="flex items-center gap-[16px]">
-          <div className="flex bg-lblue2 min-h-[42px] w-[124px] justify-center items-center gap-[16px] rounded-[8px]">
+          <div
+            className="flex bg-lblue2 min-h-[42px] w-[124px] justify-center items-center gap-[16px] rounded-[8px] cursor-pointer "
+            onClick={() => setOpen(!open)}
+          >
             <div className="w-[24px] h-[24px] relative">
               <Image src={`${image}`} alt="" fill sizes="100%" />
             </div>
             <span className="text-sm font-medium leading-[16px]">{abb}</span>
-            <OptionVertical />
+            <span>
+              <OptionVertical />
+            </span>
           </div>
           <input
             className="text-lg text-tgrey1 font-medium uppercase leading-[16px] border-none outline-none bg-transparent flex grow-[1]"

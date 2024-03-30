@@ -49,6 +49,7 @@ export const WalletModal = ({
               <div
                 className="flex justify-between items-center px-[24px] rounded-[8px] w-full min-h-[56px] border-[1px] border-[#E8EFFB]"
                 key={index}
+                onClick={() => setOpen(!open)}
               >
                 <div className="flex gap-[24px] items-center">
                   <Image
