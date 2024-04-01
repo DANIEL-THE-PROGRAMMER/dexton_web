@@ -14,7 +14,7 @@ export const TokenModal = ({
 
   return (
     <div className="fixed top-0 right-0 w-full h-full bg-black/[0.32] z-20 flex justify-center items-center">
-      <div className="w-[526px] rounded-[12px] bg-white p-[32px] min-h-[406px]">
+      <div className="mx-auto md:w-[526px] rounded-[12px] bg-white p-[32px] min-h-[406px]">
         <div className="flex justify-between items-center">
           <span className="text-tblack font-inter leading-[100%] font-meium text-[18px]">
             Select Token

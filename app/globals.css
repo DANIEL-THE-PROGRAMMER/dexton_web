@@ -56,3 +56,17 @@ li{
   opacity: 0.08;
   filter: blur(100px);
 }
+
+.farm1_nfw{
+  width:calc(100% - 600px);
+}
+
+@media screen and (max-width:444px){
+  .farm1_nfw{
+    width: 100%;
+  }
+
+  .farmopt > div{
+    flex-grow:1;
+  }
+}

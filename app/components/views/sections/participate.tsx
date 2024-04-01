@@ -1,10 +1,10 @@
 export const HowToParticipate = () => {
   return (
-    <div className="mt-[96px] mb-[377px] font-inter">
+    <div className="mt-[96px] md:mb-[377px] font-inter">
       <h3 className="text-tblack text-[32px] font-bold text-center leading-[100%] mb-[87px]">
         How to participate in Launchpad?
       </h3>
-      <div className="flex gap-[24px]">
+      <div className="flex md:flex-row flex-col gap-[24px]">
         {HowTo.map((how, index) => {
           return (
             <div

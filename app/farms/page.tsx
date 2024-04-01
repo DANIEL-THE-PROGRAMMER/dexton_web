@@ -6,12 +6,12 @@ import { Faqs } from "../components/views/sections/faqs";
 export default function Farms() {
   return (
     <div className="mx-[32px] pb-[165px]">
-      <div className="mt-[48px] flex items-center justify-between font-inter ">
-        <div className="flex flex-col">
+      <div className="mt-[48px] flex md:flex-row flex-col items-center justify-between font-inter gap-[50px]">
+        <div className="flex flex-col md:mt-0 mt-[40px]">
           <h3 className="text-tblack font-extrabold text-[50px] leading-[100%]">
             Farms
           </h3>
-          <span className="w-[528px] mt-[16px] mb-[32px] text-tgrey1">
+          <span className="md:w-[528px] mt-[16px] mb-[32px] text-tgrey1">
             Stake your LP tokens and earn TGR tokens in return. We incentivize
             many liquidity pairs by offering our Liquidity Providers best
             farming opportunities.
@@ -22,9 +22,9 @@ export default function Farms() {
         </div>
         <Image src="/assets/girl-laptop.png" alt="" width={244} height={310} />
       </div>
-      <div className="flex justify-between items-center mt-[36px]">
-        <div className="flex items-center gap-[24px]">
-          <div className="p-[6px] rounded-[12px] bg-[#EFF4FC] min-h-[44px] flex gap-[6px]">
+      <div className="flex md:flex-row flex-col gap-[24px] justify-between items-center mt-[36px]">
+        <div className="flex items-center gap-[24px] flex-wrap">
+          <div className="farmopt p-[6px] md:justify-between justify-center rounded-[12px] bg-[#EFF4FC] min-h-[44px] flex gap-[6px] flex-wrap">
             <div className="w-[108px] bg-white rounded-[8px] flex justify-center items-center">
               <span className="text-sm text-tblack font-medium leading-[100%]">
                 Live
@@ -58,7 +58,7 @@ export default function Farms() {
             <span className="leading-[100%] text-tgrey1 ">Staked only</span>
           </div>
         </div>
-        <div className="flex items-center gap-[16px]">
+        <div className="flex items-center gap-[16px] w-[99%] mx-auto md:w-auto">
           <div className="min-h-[44px] bg-[#EFF4FC] flex justify-center items-center text-[15px] text-tblack font-inter font-medium leading-[100%] w-[82px] rounded-[8px] border-[1px] border-[#EFF4FC]">
             <span>All</span>
           </div>
@@ -76,13 +76,13 @@ export default function Farms() {
       <div className="overflow-hidden rounded-[12px] shadow-[0px_4px_24px_-12px_rgba(180,191,208,0.63] bg-white mt-[48px]">
         <TableCard />
       </div>
-      <div className="flex items-center justiy-between mt-[82px] gap-[170px]">
+      <div className="flex md:flex-row flex-col items-center justiy-between mt-[82px] gap-[170px]">
         <Image src="/assets/planet.png" alt="" width={600} height={600} />
-        <div className="flex flex-col" style={{ width: "calc(100% - 600px)" }}>
+        <div className="flex flex-col farm1_nfw">
           <h3 className="text-tblack font-bold text-[32px] leading-[40px]">
             Launch Your Project on Toncoin Now!
           </h3>
-          <span className="w-[528px] mt-[24px] mb-[32px] text-tgrey1">
+          <span className="md:w-[528px] mt-[24px] mb-[32px] text-tgrey1">
             Tegro Launchpool and Farms are platforms that help project teams
             promote their token and get exposure to thousands of active Tegro
             users across the globe. We look for strong teams with clear and

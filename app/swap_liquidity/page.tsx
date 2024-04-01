@@ -1,3 +1,7 @@
-export default function Index() {
-  return <></>;
+
+
+export default function Index(){
+    return (
+        <></>
+    )
 }

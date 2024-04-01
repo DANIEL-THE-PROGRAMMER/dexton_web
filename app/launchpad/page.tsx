@@ -7,8 +7,8 @@ export default function LaunchPad() {
   return (
     <div className="mx-[32px] pb-[165px]">
       <div className="mt-[48px]">
-        <div className="mt-[48px] flex items-center justify-between font-inter ">
-          <div className="flex flex-col justify-center">
+        <div className="mt-[48px] flex md:flex-row flex-col items-center justify-between font-inter gap-[50px]">
+          <div className="flex flex-col justify-center mt-[40px]">
             <h3 className="text-tblack font-extrabold text-[50px] leading-[100%]">
               IDO Launchpad
             </h3>
@@ -43,7 +43,7 @@ export default function LaunchPad() {
             </div>
           </div>
         </div>
-        <div className="mt-[53px] flex gap-[26px]">
+        <div className="mt-[53px] flex md:flex-row flex-col gap-[26px]">
           <div className="grow-[1] basis-[414px] min-h-[416px] p-[24px] bg-white rounded-[12px]">
             <div className="flex items-center justify-between">
               <Image

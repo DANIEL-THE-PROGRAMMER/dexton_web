@@ -25,7 +25,7 @@ const Wallets = [
 
 export const WalletModal = ({
   open,
-  setOpen,
+  setOpen ,
 }: {
   open: boolean;
   setOpen: Dispatch<SetStateAction<boolean>>;
@@ -34,7 +34,7 @@ export const WalletModal = ({
 
   return (
     <div className="fixed top-0 right-0 w-full h-full bg-black/[0.32] z-20 flex justify-center items-center">
-      <div className="w-[526px] rounded-[12px] bg-white px-[32px] min-h-[406px] mt-[-100px] pt-[40px] pb-[52px]">
+      <div className="mx-auto md:w-[526px] rounded-[12px] bg-white px-[32px] min-h-[406px] mt-[-100px] pt-[40px] pb-[52px]">
         <div className="flex justify-between mb-[40px] items-center">
           <span className="text-[18px] leading-[100%] font-inter font-medium">
             Connect a wallet
