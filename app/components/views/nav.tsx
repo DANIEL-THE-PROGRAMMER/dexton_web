@@ -16,7 +16,7 @@ export const Nav = () => {
             width={40}
             height={40}
           />
-          <nav className="flex items-center gap-[40px] font-inter text-sm text-tblack font-medium">
+          <nav className="hidden md:flex items-center md:relative absolute top-0 h-[100%] gap-[40px] font-inter text-sm text-tblack font-medium">
             <Link href="/swap_liquidity/swap">Swap</Link>
             <Link href="/swap_liquidity/liquidity/liquidify">Liquidity</Link>
             <Link href="#" className="flex items-center gap-[12px]">
@@ -46,7 +46,7 @@ export const Nav = () => {
             <More />
           </nav>
         </div>
-        <div className="flex items-center gap-[16px]">
+        <div className="hidden md:flex items-center gap-[16px]">
           <div className="flex gap-[24px] items-center min-h-[40px] px-[16px] rounded-[6px] w-[284px] border-[1px] border-lblue1">
             <Search />
             <input

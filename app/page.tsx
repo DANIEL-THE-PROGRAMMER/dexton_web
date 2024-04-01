@@ -7,7 +7,7 @@ import { TermsOfUse } from "./components/views/sections/terms";
 export default function Home() {
   return (
     <>
-      <div className="px-[32px] pt-[96px]">
+      <div className="px-[32px] pt-[96px] pb-[165px]">
         <div className="flex flex-col items-center font-inter gap-[24px] mb-[120px]">
           <h2 className="text-tblack font-extrabold leading-[100%] text-[50px]">
             Fixed Staking
@@ -16,8 +16,8 @@ export default function Home() {
             1st on TONCOIN DEX. Level up your crypto earn!
           </h6>
         </div>
-        <div className="flex justify-between items-center">
-          <div className="flex items-center gap-[24px]">
+        <div className="flex justify-between items-center flex-wrap gap-[24px]">
+          <div className="flex items-center gap-[24px] flex-wrap">
             <div className="p-[6px] rounded-[12px] bg-[#EFF4FC] min-h-[44px] flex gap-[6px]">
               <div className="w-[108px] bg-white rounded-[8px] flex justify-center items-center">
                 <span className="text-sm text-tblack font-medium leading-[100%]">
@@ -37,7 +37,7 @@ export default function Home() {
               <span className="leading-[100%] text-tgrey1 ">Staked only</span>
             </div>
           </div>
-          <div className="flex items-center gap-[16px]">
+          <div className="flex items-center gap-[16px] flex-wrap">
             <div className="min-h-[44px] bg-[#EFF4FC] flex justify-center items-center text-[15px] text-tblack font-inter font-medium leading-[100%] w-[82px] rounded-[8px] border-[1px] border-[#EFF4FC]">
               <span>All</span>
             </div>
@@ -52,7 +52,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-[24px] grid grid-cols-3 gap-[24px]">
+        <div className="mt-[24px] grid grid-cols-1 md:grid-cols-3 gap-[24px]">
           <TokensCard />
           <TokensCard />
           <TokensCard />

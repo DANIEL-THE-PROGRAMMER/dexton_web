@@ -15,7 +15,7 @@ export const Tab = () => {
   const getLink = usePathname().split("/")[path];
 
   return (
-    <div className="w-[516px] min-h-[56px] p-[6px] gap-[6px] flex bg-lblue2 rounded-[12px]">
+    <div className="md:w-[516px] min-h-[56px] p-[6px] gap-[6px] flex bg-lblue2 rounded-[12px] flex-wrap">
       {option.map((opt, index) => {
         const style = {
           backgroundColor:
@@ -29,7 +29,7 @@ export const Tab = () => {
         };
         return (
           <Link
-            className="rounded-[8px] text-sm font-inter flex items-center justify-center grow basis-[164px]"
+            className="rounded-[8px] text-sm font-inter flex items-center justify-center grow md:basis-[164px]"
             href={`/${opt.toLowerCase()}`}
             key={index}
             style={style}

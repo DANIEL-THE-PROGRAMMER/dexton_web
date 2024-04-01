@@ -26,11 +26,11 @@ export default function RootLayout({
       <body className={`${inter.variable}`}>
         <Nav />
         <div className="h-[1px] w-full bg-lblue2"></div>
-        <div className="flex relative">
+        <div className="md:flex relative">
           <BgGradient />
-          <div className="w-[280px] relative z-20 border-r-lblue2 border-r-[1px]"></div>
-          <div className="grow-[1] relative z-30 basis-[400px]">{children}</div>
-          <div className="w-[280px] relative z-20  border-l-lblue2 border-l-[1px]"></div>
+          <div className="w-[280px] hidden md:block relative z-20 border-r-lblue2 border-r-[1px]"></div>
+          <div className="md:grow-[1] relative z-30 md:basis-[400px]">{children}</div>
+          <div className="w-[280px] hidden md:block relative z-20  border-l-lblue2 border-l-[1px]"></div>
         </div>
         <Footer />
       </body>

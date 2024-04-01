@@ -63,7 +63,7 @@ export const Faqs = () => {
       <h2 className="font-inter text-tblack text-[32px] leading-[100%] font-bold mb-[48px]">
         FAQ
       </h2>
-      <div className="flex gap-x-[24px]">
+      <div className="flex gap-x-[24px] md:flex-row flex-col gap-[16px]">
         <div className="grow-[1] basis-[200px] flex flex-col gap-[16px]">
           {FAQs.slice(0, 5).map(
             (

@@ -8,7 +8,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         className="flex flex-col items-center"
         style={{ height: "calc(100vh - 81px)" }}
       >
-        <div className="mt-[48px] flex flex-col gap-[24px]">
+        <div className="mt-[48px] flex flex-col gap-[24px] w-[95%] mx-auto md:w-auto">
           <Tab />
           <Card>{children}</Card>
         </div>

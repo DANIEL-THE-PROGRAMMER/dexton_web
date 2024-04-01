@@ -8,13 +8,13 @@ export const TermsOfUse = () => {
         <small className="mt-[4px] mb-[16px] text-tgrey1 font-medium leading-[24px] text-[16px]">
           Revised: Aprol 8, 2022
         </small>
-        <p className="text-tblack font-medium leading-[26px] text-[18px] w-[441px]">
+        <p className="text-tblack font-medium leading-[26px] text-[18px] md:w-[441px]">
           Please read the terms carefully as they govern your use of
           Tegro.Finance “Fixed Staking” services.
         </p>
       </div>
       <div className="h-[1px] bg-[#E8EFFB] mt-[24px] mb-[40px]"></div>
-      <div className="flex gap-[24px]">
+      <div className="flex  gap-[32px] flex-col md:flex-row">
         <div className="flex flex-col gap-[32px] grow-[1] basis-[200px]">
           {Terms.slice(0, 7).map((term, index) => {
             return (

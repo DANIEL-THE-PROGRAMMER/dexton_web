@@ -44,9 +44,9 @@ export const Field = ({
         )}
       </div>
       <div className="min-h-[50px] mt-[8px] rounded-[10px] border-[1px] border-lblue1 bg-[#FCFDFE] flex justify-between items-center p-[8px]">
-        <div className="flex items-center gap-[16px]">
+        <div className="flex items-center gap-[16px] w-[75%] md:w-auto">
           <div
-            className="flex bg-lblue2 min-h-[42px] w-[124px] justify-center items-center gap-[16px] rounded-[8px] cursor-pointer "
+            className="flex bg-lblue2 min-h-[42px] w-[124px] justify-center items-center gap-[16px] rounded-[8px] cursor-pointer md:px-0 px-[8px]"
             onClick={() => setOpen(!open)}
           >
             <div className="w-[24px] h-[24px] relative">

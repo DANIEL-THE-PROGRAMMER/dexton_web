@@ -2,10 +2,8 @@ import Image from "next/image";
 
 export const Footer = () => {
   return (
-    <div className="flex flex-col items-center pb-[80px] gap-[32px]">
-      <span className="font-semibold text-[16px] leading-[100%] text-tblack">
-        DEX by Tegro
-      </span>
+    <div className="flex flex-col items-center pb-[80px] gap-[32px] justify-center w-full">
+      <span className="font-semibold text-[16px] leading-[100%] text-tblack">DEX by Tegro</span>
       <div className="flex gap-[24px] items-center justify-center">
         <Image src="/assets/br-instagram.png" alt="" width={24} height={24} />
         <Image src="/assets/br-github.png" alt="" width={24} height={24} />
